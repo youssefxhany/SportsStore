@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-xs-12">
+        <div class="row">
+            <div class="col-sm-5 form-group">
+                <label for="name">Name</label>
+                <input type="text" [(ngModel)]='name' class="form-control" >
+            </div>
+            <div class="col-sm-2 form-group">
+                <label for="amount">Size</label>
+                <input type="number" class="form-control" [(ngModel)]='size'
+                    pattern="^[1-9]+[0-9]*$">
+            </div>
+            <div class="col-sm-2 form-group">
+                <label for="amount">Color</label>
+                <input type="text" class="form-control" [(ngModel)]='color'
+                    pattern="^[1-9]+[0-9]*$">
+            </div>
+            <div class="col-sm-2 form-group">
+                <label for="amount">Price</label>
+                <input type="number" class="form-control" [(ngModel)]='price'
+                    pattern="^[1-9]+[0-9]*$">
+            </div>
+        </div>
+        <div class="col-sm-2 form-group">
+            <button class="btn btn-primary" (click)="onAddShoes()">ADD</button>
+        </div>
+        <div class="col-sm-2 form-group">
+            <button class="btn btn-primary" (click)="onEditShoes()">UPDATE</button>
+        </div>
+        <div class="col-sm-2 form-group">
+            <button class="btn btn-primary" (click)="onDeleteShoes()">Delete</button>
+        </div>
+        <div class="row">
+            <app-nike-list></app-nike-list>
+        </div>
+    </div>
+</div>

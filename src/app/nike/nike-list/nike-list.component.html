@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12"></div>
+        <app-nike-element
+        *ngFor="let nikeElement of nikeList; let i=index;"
+        [nikeElement]=nikeElement
+        [index]=i></app-nike-element>
+    </div>
+    <div class="row">
+        <router-outlet></router-outlet>
+    </div>
+</div>
